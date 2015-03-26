@@ -14,7 +14,7 @@ twitApi = new Twit
 
 
 server.connection
-  port: if (process.env.NODE_ENV == "production") then process.env.PORT else 3000
+  port: if (process.env.NODE_ENV == "production") then (process.env.PORT || 80) else 3000
 
 server.views
   engines:
