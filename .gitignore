@@ -5,7 +5,7 @@ client/vendors
 
 # Dest files (no need to push them on git)
 client/build
-backend/public
+backend/public # heroku will need this
 #client/test/lib # Left this in git so I don't have to use custom gulp for deploy
 
 

@@ -20,12 +20,11 @@ var loadGulpFile = function (path) {
 
 // Load Gulp file tasks
 loadGulpFile(__dirname + "/gulp/client-deploy.js");
-//loadGulpFile(__dirname + "/gulp/client-test.js");
 
 
 // Tasks
 gulp.task("default", [
-  "client-deploy"
+  "client-deploy-watch"
 ], function (done) {
 
   var exec = require("child_process").exec,

@@ -66,6 +66,11 @@ module.exports = function (gulp, plugins, paths) {
     "client-js-copy-dep-rjs",
     "client-js-build",
     "client-css-build"
+  ]);
+
+
+  gulp.task("client-deploy-watch", [
+    "client-deploy",
   ], function () {
 
     gulp.watch(paths.clientSrc + "js/**/*", ["client-js-build"]);
