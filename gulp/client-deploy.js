@@ -69,6 +69,15 @@ module.exports = function (gulp, plugins, paths) {
   ]);
 
 
+  gulp.task("client-deploy-install", [
+    "client-deploy"
+  ], function () {
+
+    return plugins.bower();
+
+  });
+
+
   gulp.task("client-deploy-watch", [
     "client-deploy",
   ], function () {

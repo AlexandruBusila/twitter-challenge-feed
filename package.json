@@ -3,7 +3,7 @@
   "version": "0.4.0",
   "description": "Twitter Challenge for AppDirect",
   "scripts": {
-    "start": "gulp client-deploy && node main.js",
+    "start": "gulp client-deploy-install && node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -26,7 +26,8 @@
     "joi": "^6.0.8",
     "open": "0.0.5",
     "requirejs": "^2.1.16",
-    "twit": "^1.1.20"
+    "twit": "^1.1.20",
+    "gulp-bower": "0.0.10"
   },
   "engines": {
     "node": "0.12.1"
