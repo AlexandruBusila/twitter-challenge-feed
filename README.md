@@ -1,4 +1,9 @@
 
+Heroku
+======
+
+* This app is deployed on [Heroku](https://serene-coast-6299.herokuapp.com).
+
 Installation
 ============
 
@@ -20,7 +25,8 @@ Issues
 * I cheated with CSS and used a theme for Bootstrap since my CSS skills are
 under par.
 
-* In regards to the `TweetsService`, I should have split it in 3 ViewControllers
-that each take a parameter for the user name and set up the TweetCompositeView.
+* In regards to the `TweetsService`, I should have created a ViewController responsible
+of TweetCompositeView that takes a parameter for the user name. Lots of code gets
+repeated in the service and is quite ugly.
 
 * Missing the drag and drop between the columns and the style changing in settings.
