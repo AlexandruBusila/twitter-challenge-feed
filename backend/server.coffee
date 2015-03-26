@@ -7,14 +7,14 @@ Twit = require("twit")
 server = module.exports = new Hapi.Server()
 
 twitApi = new Twit
-  consumer_key: "eHPWwhAAGP5Sei4xbBh5GVudf"
-  consumer_secret: "1xycS5b4z4pZ87xTol1L0fvWriv71vlQuAXzGn5qBa3ysTmWhG"
-  access_token: "3115009691-GzSD5DagmDu8hswH2cQFPkQpOQGrE6yvxhQpB6P"
-  access_token_secret: "l57g2HM3cyJw4U9Vs9yx7czeXO9DUmIqwFQXHXZjgAwNp"
+  consumer_key: process.env.CONSUMER_KEY
+  consumer_secret: process.env.CONSUMER_SECRET
+  access_token: process.env.ACCESS_TOKEN
+  access_token_secret: process.env.ACCESS_TOKEN_SECRET
 
 
 server.connection
-  port: 3000
+  port: if (process.env.NODE_ENV == "production") then process.env.PORT else 3000
 
 server.views
   engines:
