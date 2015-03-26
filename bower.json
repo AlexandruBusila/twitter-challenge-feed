@@ -1,0 +1,25 @@
+{
+  "name": "twitter-challenge",
+  "version": "0.4.0",
+  "description": "Twitter Challenge AppDirect",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "twitter",
+    "challenge",
+    "AppDirect"
+  ],
+  "authors": [
+    "Alexandru Busila"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "marionette": "~2.4.1",
+    "lodash": "~3.6.0",
+    "requirejs-text": "~2.0.14",
+    "requirejs": "~2.1.16"
+  }
+}

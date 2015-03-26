@@ -1,0 +1,24 @@
+
+<div class="tweet-data">
+
+  <img
+    class="tweet-user-image"
+    src="{{- user.profile_image_url }}">
+
+  <a
+    class="tweet-user-name"
+    href="https://twitter.com/{{- user.screen_name }}">
+
+    {{- user.name }}
+  </a>
+
+  <div class="tweet-user-screen-name">@{{- user.screen_name }}</div>
+
+</div>
+
+<div class="tweet-data">
+
+  <div class="tweet-text">{{= text }}</div>
+  <div class="tweet-date">{{- created_at }}</div>
+
+</div>
